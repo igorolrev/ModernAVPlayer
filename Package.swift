@@ -3,7 +3,7 @@ import PackageDescription
 
 let package = Package(
     name: "ModernAVPlayer",
-	platforms: [SupportedPlatform.iOS("10.0")],
+    platforms: [SupportedPlatform.iOS(SupportedPlatform.IOSVersion.v10), SupportedPlatform.tvOS(SupportedPlatform.TVOSVersion.v10)],
     products: [
         .library(name: "ModernAVPlayer", targets: ["ModernAVPlayer"]),
         .library(name: "RxModernAVPlayer", targets: ["RxModernAVPlayer"])
